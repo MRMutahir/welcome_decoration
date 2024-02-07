@@ -1,0 +1,105 @@
+"use client";
+import WellComeLogo from "../../../public/WELCOMElogo.svg";
+import birthday from "../../../public/birthday.webp";
+import Mhendi from "../../../public/mhendi.jpg";
+import React, { useRef, useState } from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { BsWhatsapp } from "react-icons/bs";
+import { FaFacebookF } from "react-icons/fa";
+import { Pagination } from "swiper/modules";
+
+import Image from "next/image";
+import DemoCarousel from "./Carusole";
+
+const Main = () => {
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
+
+  return (
+    <div className="flex">
+      <div className="sideBar">
+        <div className="fixed bg-[#FFF7EA] h-[100vh] w-[20%] flex justify-around flex-col items-center">
+          <div className="flex flex-col  items-center">
+            <div className="text-center">
+              <h1 className="text-4xl font-bold tracking-tighter">
+                welcome decoration
+              </h1>
+            </div>
+            <div className="">
+              {" "}
+              <Image
+                src={WellComeLogo}
+                width={200}
+                height={200}
+                alt="welcome decoration"
+              />
+            </div>
+          </div>
+          <div>
+            <ul className="list-none text-center flex flex-col gap-5">
+              <li className="text-[#A2783A] text-2xl font-normal font-serif">
+                Home
+              </li>
+              <li className="text-[#A2783A] text-2xl font-normal font-serif">
+                Services
+              </li>
+              <li className="text-[#A2783A] text-2xl font-normal font-serif">
+                Why
+              </li>
+              <li className="text-[#A2783A] text-2xl font-normal font-serif">
+                About
+              </li>
+              <li className="text-[#A2783A] text-2xl font-normal font-serif">
+                Cotact
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul className="flex justify-between gap-4">
+              <li>
+                <FaFacebookF className="text-[#A2783A] w-14 h-9" />
+              </li>
+              <li>
+                <FaLinkedinIn className="text-[#A2783A] w-14 h-9" />
+              </li>
+              <li>
+                <FaInstagram className="text-[#A2783A] w-14 h-9" />
+              </li>
+              <li>
+                <BsWhatsapp className="text-[#A2783A] w-14 h-9" />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh]">
+        <Swiper
+          pagination={pagination}
+          modules={[Pagination]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <Image src={WellComeLogo} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src={birthday} />
+          </SwiperSlide>
+          <SwiperSlide>
+            <Image src={Mhendi} />
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
+  );
+};
+
+export default Main;
