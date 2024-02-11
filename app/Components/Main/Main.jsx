@@ -1,7 +1,8 @@
 "use client";
-import WellComeLogo from "../../../public/WELCOMElogo.svg";
-import birthday from "../../../public/birthday.webp";
-import Mhendi from "../../../public/mhendi.jpg";
+// import WellComeLogo from "../../../public/WELCOMElogo.svg";
+// import birthday from "../../../public/birthday.webp";
+// import Mhendi from "../../../public/mhendi.jpg";
+// import Weddingvideo from "../../../public/Weddingvideo.mp4";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -11,18 +12,17 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
-import { Pagination } from "swiper/modules";
-
 import Image from "next/image";
-import DemoCarousel from "./Carusole";
+import VideoPlayer from "../VideoPlayer";
+// import DemoCarousel from "./Carusole";
 
 const Main = () => {
-  const pagination = {
-    clickable: true,
-    renderBullet: function (index, className) {
-      return '<span class="' + className + '">' + (index + 1) + "</span>";
-    },
-  };
+  // const pagination = {
+  //   clickable: true,
+  //   renderBullet: function (index, className) {
+  //     return '<span class="' + className + '">' + (index + 1) + "</span>";
+  //   },
+  // };
 
   return (
     <div className="flex">
@@ -37,7 +37,7 @@ const Main = () => {
             <div className="">
               {" "}
               <Image
-                src={WellComeLogo}
+                // src={WellComeLogo}
                 width={200}
                 height={200}
                 alt="welcome decoration"
@@ -82,21 +82,22 @@ const Main = () => {
         </div>
       </div>
       <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh]">
-        <Swiper
+        <VideoPlayer />
+        {/* <Swiper
           pagination={pagination}
           modules={[Pagination]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <Image src={WellComeLogo} />
+            <Image src={Weddingvideo} className="h-fit" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={birthday} />
+            <Image src={birthday} className="h-fit" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={Mhendi} />
+            <Image src={Mhendi} className="h-fit" />
           </SwiperSlide>
-        </Swiper>
+        </Swiper> */}
       </div>
     </div>
   );
