@@ -1,5 +1,5 @@
 "use client";
-// import WellComeLogo from "../../../public/WELCOMElogo.svg";
+// import WellComeLogo from "/public/WELCOMElogo.svg";
 // import birthday from "../../../public/birthday.webp";
 // import Mhendi from "../../../public/mhendi.jpg";
 // import Weddingvideo from "../../../public/Weddingvideo.mp4";
@@ -37,7 +37,7 @@ const Main = () => {
             <div className="">
               {" "}
               <Image
-                // src={WellComeLogo}
+                src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/Logo%2FWELCOMElogo.svg?alt=media&token=043a1e4e-04a0-4a21-afe9-8186edcc399c"
                 width={200}
                 height={200}
                 alt="welcome decoration"
@@ -83,7 +83,9 @@ const Main = () => {
       </div>
       <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh]">
         <VideoPlayer />
-        {/* <Swiper
+      </div>
+
+      {/* <Swiper
           pagination={pagination}
           modules={[Pagination]}
           className="mySwiper"
@@ -98,7 +100,6 @@ const Main = () => {
             <Image src={Mhendi} className="h-fit" />
           </SwiperSlide>
         </Swiper> */}
-      </div>
     </div>
   );
 };
