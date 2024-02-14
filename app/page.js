@@ -1,10 +1,5 @@
-import Main from "./Components/Main/Main";
-import VideoPlayer from "./Components/VideoPlayer";
+import Main from "./components/Main.jsx";
 
 export default function Home() {
-  return (
-
-    <Main />
-    // <VideoPlayer />
-  );
+  return <Main />;
 }
