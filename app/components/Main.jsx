@@ -3,10 +3,10 @@
 // import Mhendi from "../../../public/mhendi.jpg";
 // import Weddingvideo from "../../../public/Weddingvideo.mp4";
 // Import Swiper React components
-// import { Swiper, SwiperSlide } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 // import React, { useRef, useState } from "react";
-// import "swiper/css";
-// import "swiper/css/pagination";
+import "swiper/css";
+import "swiper/css/pagination";
 // import DemoCarousel from "./Carusole";
 import WellComeLogo from "../../public/image/img.svg";
 import sliderone from "../../public/image/HM1.jpg";
@@ -18,12 +18,12 @@ import { FaFacebookF } from "react-icons/fa";
 import Image from "next/image";
 
 const Main = () => {
-  // const pagination = {
-  //   clickable: true,
-  //   renderBullet: function (index, className) {
-  //     return '<span class="' + className + '">' + (index + 1) + "</span>";
-  //   },
-  // };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      return '<span class="' + className + '">' + (index + 1) + "</span>";
+    },
+  };
   return (
     <div className="flex">
       <div className="sideBar">
@@ -82,11 +82,13 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh] relative flex items-center justify-center">
+      <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh] relative flex items-center  flex-col justify-center">
         <div className="absolute flex flex-col gap-4 bg-[#FFFFFF] px-20 py-10 rounded-lg">
           {" "}
           <div>
-            <h1 className="text-4xl text-[#A2783A]  font-bold  italic">Dream Maker</h1>
+            <h1 className="text-4xl text-[#A2783A]  font-bold  italic">
+              Dream Maker
+            </h1>
           </div>
           <div>
             <h4 className="text-2l  font-normal">YOUR PERSONAL DREAM MAKER</h4>
@@ -101,21 +103,23 @@ const Main = () => {
             <button className="btn btn-neutral">Book Now</button>
           </div>
         </div>
-        <Swiper
-          pagination={pagination}
-          modules={[Pagination]}
-          className="mySwiper"
-        >
-          <SwiperSlide>
-            <Image src={Weddingvideo} className="h-fit" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image src={birthday} className="h-fit" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <Image src={Mhendi} className="h-fit" />
-          </SwiperSlide>
-        </Swiper>
+        <div>
+          {/* <Swiper
+            pagination={pagination}
+            // modules={[pagination]}
+            className="mySwiper w-auto"
+          >
+            <SwiperSlide>
+              <Image src={sliderone} className="h-fit" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={slidertwo} className="h-fit" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Image src={sliderone} className="h-fit" />
+            </SwiperSlide>
+          </Swiper> */}
+        </div>
         <section>
           <video
             // src="/video/video.mp4"
@@ -129,7 +133,6 @@ const Main = () => {
           </video>
         </section>
       </div>
-
     </div>
   );
 };
