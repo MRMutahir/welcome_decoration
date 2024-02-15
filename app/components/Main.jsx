@@ -15,7 +15,6 @@ import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import Image from "next/image";
 
-
 const Main = () => {
   // const pagination = {
   //   clickable: true,
@@ -81,13 +80,14 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh]">
+      <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh] relative flex items-center justify-center">
+        <div className="absolute">
+          <h1>Well come</h1>
+        </div>
         <section>
-          <h2>Video Section</h2>
-          {/* Use a direct path for the video; ensure it's correctly placed in the public directory */}
           <video
             // src="/video/video.mp4"
-            controls
+            src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideo.mp4?alt=media&token=d634aedf-3222-46cc-b05b-9c9b8e070f53"
             autoPlay
             loop
             muted
