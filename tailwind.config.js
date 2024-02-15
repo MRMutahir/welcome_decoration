@@ -13,11 +13,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       images: {
-        domains: ['firebasestorage.googleapis.com'],
+        domains: ["firebasestorage.googleapis.com"],
       },
     },
   },
 
-  
-  plugins: [],
+  plugins: [require("daisyui")],
 };

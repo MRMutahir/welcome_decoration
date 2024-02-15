@@ -9,6 +9,8 @@
 // import "swiper/css/pagination";
 // import DemoCarousel from "./Carusole";
 import WellComeLogo from "../../public/image/img.svg";
+import sliderone from "../../public/image/HM1.jpg";
+import slidertwo from "../../public/image/HM5.jpg";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
@@ -81,23 +83,25 @@ const Main = () => {
         </div>
       </div>
       <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh] relative flex items-center justify-center">
-        <div className="absolute">
-          <h1>Well come</h1>
+        <div className="absolute flex flex-col gap-4 bg-[#FFFFFF] px-20 py-10 rounded-lg">
+          {" "}
+          <div>
+            <h1 className="text-4xl text-[#A2783A]  font-bold  italic">Dream Maker</h1>
+          </div>
+          <div>
+            <h4 className="text-2l  font-normal">YOUR PERSONAL DREAM MAKER</h4>
+          </div>
+          <div>
+            <p>
+              We believe that it is all about the BIG DREAMS and the small
+              details!
+            </p>
+          </div>
+          <div>
+            <button className="btn btn-neutral">Book Now</button>
+          </div>
         </div>
-        <section>
-          <video
-            // src="/video/video.mp4"
-            src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideo.mp4?alt=media&token=d634aedf-3222-46cc-b05b-9c9b8e070f53"
-            autoPlay
-            loop
-            muted
-            style={{ maxWidth: "100%", height: "auto" }}
-          >
-            Your browser does not support the video tag.
-          </video>
-        </section>
-      </div>
-      {/* <Swiper
+        <Swiper
           pagination={pagination}
           modules={[Pagination]}
           className="mySwiper"
@@ -111,7 +115,21 @@ const Main = () => {
           <SwiperSlide>
             <Image src={Mhendi} className="h-fit" />
           </SwiperSlide>
-        </Swiper> */}
+        </Swiper>
+        <section>
+          <video
+            // src="/video/video.mp4"
+            src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideo.mp4?alt=media&token=d634aedf-3222-46cc-b05b-9c9b8e070f53"
+            autoPlay
+            loop
+            muted
+            style={{ maxWidth: "100%", height: "auto" }}
+          >
+            Your browser does not support the video tag.
+          </video>
+        </section>
+      </div>
+
     </div>
   );
 };
