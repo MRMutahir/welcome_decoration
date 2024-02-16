@@ -1,12 +1,10 @@
 import React, { useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
+// import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
-import '../globals.css';
+import './Slider.css';
 
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
@@ -28,7 +26,7 @@ export default function Slider() {
                 }}
                 pagination={true}
                 modules={[EffectCoverflow, Pagination]}
-                className="mySwiper"
+                className="mySwiper w-full"
             >
                 <SwiperSlide>
                     <img src="https://swiperjs.com/demos/images/nature-1.jpg" />

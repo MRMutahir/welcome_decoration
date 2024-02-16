@@ -8,7 +8,7 @@ import 'swiper/css/effect-cards';
 import sliderone from "/public/image/HM1.jpg";
 import slidertwo from "/public/image/HM5.jpg";
 import bgFlower from "/public/image/bgFlower.webp";
-import secaCss from "./SecaSlider.css"
+import "./SecaSlider.css"
 
 // import required modules
 import { EffectCards, Autoplay } from 'swiper/modules';

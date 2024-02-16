@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.15.16",
     "file-loader": "^6.2.0",
     "next": "14.1.0",
     "react": "^18",
@@ -16,7 +17,8 @@
     "react-icons": "^5.0.1",
     "react-player": "^2.14.1",
     "react-responsive-carousel": "^3.2.23",
-    "swiper": "^11.0.6"
+    "swiper": "^11.0.6",
+    "three": "^0.161.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",

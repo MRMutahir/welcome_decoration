@@ -1,10 +1,9 @@
 .secA {
-  background-image: url("https://t4.ftcdn.net/jpg/04/38/22/45/360_F_438224508_k6e1uLEvmnm8aaLoSwpQxG399Jj2fCFF.jpg");
+  /* background-image: url("https://t4.ftcdn.net/jpg/04/38/22/45/360_F_438224508_k6e1uLEvmnm8aaLoSwpQxG399Jj2fCFF.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
-
 .swiper {
   width: 240px;
   height: 320px;

@@ -3,7 +3,6 @@
 // import Mhendi from "../../../public/mhendi.jpg";
 // import Weddingvideo from "../../../public/Weddingvideo.mp4";
 // Import Swiper React components
-
 import WellComeLogo from "../../public/image/img.svg";
 import sliderone from "../../public/image/HM1.jpg";
 import slidertwo from "../../public/image/HM5.jpg";
@@ -14,9 +13,8 @@ import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import Image from "next/image";
 import Slider from "./Slider";
-// import '../globals.css';
 import SecASlider from "./SecAslider";
-
+import Why from "./Why";
 
 const Main = () => {
   const pagination = {
@@ -29,7 +27,7 @@ const Main = () => {
   return (
     <div className="flex">
       <div className="sideBar">
-        <div className="fixed bg-[#FFF7EA] h-[100vh] w-[20%] flex justify-around flex-col items-center">
+        <div className="fixed  h-[100vh] w-[20%] flex justify-around flex-col items-center">
           <div className="flex flex-col  items-center">
             <div className="text-center">
               <h1 className="text-4xl font-bold tracking-tighter">
@@ -84,19 +82,17 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="rightBar overflow-auto bg-[#FFF7EA]  w-full h-screen" >
+      <div className="rightBar overflow-auto bg-[#FFF7EA]  w-full h-screen">
         <div className="flex items-center  justify-center w-full h-screen secA">
           {" "}
           <div className="flex flex-col gap-4 bg-[#FFFFFF] px-20 py-16 rounded-lg rounded-t-none">
             <div>
               <h1 className="text-4xl text-[#A2783A]  font-bold  italic">
-                Dream Maker
+                Celebrating Dreams,
               </h1>
             </div>
             <div>
-              <h4 className="text-2l  font-normal">
-                YOUR PERSONAL DREAM MAKER
-              </h4>
+              <h4 className="text-2l  font-normal">Crafting Memories.</h4>
             </div>
             <div>
               <p>
@@ -124,12 +120,10 @@ const Main = () => {
             </video>
           </section> */}
         </div>
-        <div className="">
-          <Slider />
-        </div>
+        {/* Why  section */}
+        <Why />
       </div>
-
-    </div >
+    </div>
   );
 };
 
