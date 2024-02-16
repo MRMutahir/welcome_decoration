@@ -3,19 +3,20 @@
 // import Mhendi from "../../../public/mhendi.jpg";
 // import Weddingvideo from "../../../public/Weddingvideo.mp4";
 // Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-// import React, { useRef, useState } from "react";
-import "swiper/css";
-import "swiper/css/pagination";
-// import DemoCarousel from "./Carusole";
+
 import WellComeLogo from "../../public/image/img.svg";
 import sliderone from "../../public/image/HM1.jpg";
 import slidertwo from "../../public/image/HM5.jpg";
+// import bgFlower from "/public/image/bgFlower.webp";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
 import Image from "next/image";
+import Slider from "./Slider";
+// import '../globals.css';
+import SecASlider from "./SecAslider";
+
 
 const Main = () => {
   const pagination = {
@@ -24,6 +25,7 @@ const Main = () => {
       return '<span class="' + className + '">' + (index + 1) + "</span>";
     },
   };
+
   return (
     <div className="flex">
       <div className="sideBar">
@@ -82,58 +84,52 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <div className="rightBar overflow-auto bg-[#FFF7EA] w-screen h-[100vh] relative flex items-center  flex-col justify-center">
-        <div className="absolute flex flex-col gap-4 bg-[#FFFFFF] px-20 py-10 rounded-lg">
+      <div className="rightBar overflow-auto bg-[#FFF7EA]  w-full h-screen" >
+        <div className="flex items-center  justify-center w-full h-screen secA">
           {" "}
-          <div>
-            <h1 className="text-4xl text-[#A2783A]  font-bold  italic">
-              Dream Maker
-            </h1>
+          <div className="flex flex-col gap-4 bg-[#FFFFFF] px-20 py-16 rounded-lg rounded-t-none">
+            <div>
+              <h1 className="text-4xl text-[#A2783A]  font-bold  italic">
+                Dream Maker
+              </h1>
+            </div>
+            <div>
+              <h4 className="text-2l  font-normal">
+                YOUR PERSONAL DREAM MAKER
+              </h4>
+            </div>
+            <div>
+              <p>
+                We believe that it is all about the BIG DREAMS and the small
+                details!
+              </p>
+            </div>
+            <div>
+              <button className="btn btn-neutral">Book Now</button>
+            </div>
           </div>
-          <div>
-            <h4 className="text-2l  font-normal">YOUR PERSONAL DREAM MAKER</h4>
+          <div className="relative -left-2">
+            <SecASlider />
           </div>
-          <div>
-            <p>
-              We believe that it is all about the BIG DREAMS and the small
-              details!
-            </p>
-          </div>
-          <div>
-            <button className="btn btn-neutral">Book Now</button>
-          </div>
+          {/* <section>
+            <video
+              // src="/video/video.mp4"
+              src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideo.mp4?alt=media&token=d634aedf-3222-46cc-b05b-9c9b8e070f53"
+              autoPlay
+              loop
+              muted
+              style={{ maxWidth: "100%", height: "auto" }}
+            >
+              Your browser does not support the video tag.
+            </video>
+          </section> */}
         </div>
-        <div>
-          {/* <Swiper
-            pagination={pagination}
-            // modules={[pagination]}
-            className="mySwiper w-auto"
-          >
-            <SwiperSlide>
-              <Image src={sliderone} className="h-fit" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={slidertwo} className="h-fit" />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Image src={sliderone} className="h-fit" />
-            </SwiperSlide>
-          </Swiper> */}
+        <div className="">
+          <Slider />
         </div>
-        <section>
-          <video
-            // src="/video/video.mp4"
-            src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideo.mp4?alt=media&token=d634aedf-3222-46cc-b05b-9c9b8e070f53"
-            autoPlay
-            loop
-            muted
-            style={{ maxWidth: "100%", height: "auto" }}
-          >
-            Your browser does not support the video tag.
-          </video>
-        </section>
       </div>
-    </div>
+
+    </div >
   );
 };
 
