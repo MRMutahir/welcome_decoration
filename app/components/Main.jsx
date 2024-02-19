@@ -15,6 +15,8 @@ import Image from "next/image";
 import Slider from "./Slider";
 import SecASlider from "./SecAslider";
 import Why from "./Why";
+import About from "./About";
+import Contact from "./Contact";
 const Main = () => {
   const pagination = {
     clickable: true,
@@ -120,6 +122,8 @@ const Main = () => {
         </div>
         {/* Why  section */}
         <Why />
+        <About />
+        <Contact />
       </div>
     </div>
   );
