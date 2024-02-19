@@ -13,3 +13,11 @@
   flex: 8;
 }
 
+.rightBar {
+  /* background-image: url("../public/image/bgFlower.webp") !important;
+   */
+  background-image: url("https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
