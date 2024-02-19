@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import Main from "./Main";
 
 const Confetti = () => {
   const canvasRef = useRef(null);
@@ -174,7 +175,11 @@ const Confetti = () => {
     };
   }, []);
 
-  return <div ref={canvasRef} />;
+  return (
+    <div ref={canvasRef}>
+      <Main />
+    </div>
+  );
 };
 
 export default Confetti;
