@@ -4,7 +4,6 @@ import Image from "next/image";
 import ImageOne from "../../public/image/HM1.jpg";
 import "swiper/css";
 import "swiper/css/navigation";
-import "../globals.css";
 import { Navigation } from "swiper/modules";
 
 export default function Slider() {
