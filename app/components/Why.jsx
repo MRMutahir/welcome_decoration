@@ -5,7 +5,7 @@ import { FaSquareCheck } from "react-icons/fa6";
 
 const Why = () => {
   return (
-    <div className="h-screen  flex items-center justify-center gap-10  flex-col w-full">
+    <div className="h-screen  flex items-center justify-center gap-10  flex-col w-full" id="Why">
       <div className="flex  justify-center items-center ">
         <h1 className="text-8xl">Why</h1>
         <div className="">

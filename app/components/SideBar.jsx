@@ -3,6 +3,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { BsWhatsapp } from "react-icons/bs";
 import { FaFacebookF } from "react-icons/fa";
+import Link from "next/link";
 import Image from "next/image";
 
 const SideBar = () => {
@@ -28,24 +29,38 @@ const SideBar = () => {
         </div>
         <div>
           <ul className="list-none text-center flex flex-col gap-5">
-            <li className="text-[#A2783A] text-2xl font-normal font-serif">
-              Home
-            </li>
-            <li className="text-[#A2783A] text-2xl font-normal font-serif">
-              Why
-            </li>
-            <li className="text-[#A2783A] text-2xl font-normal font-serif">
-              About
-            </li>
-            <li className="text-[#A2783A] text-2xl font-normal font-serif">
-              Cotact
-            </li>
-            <li className="text-[#A2783A] text-2xl font-normal font-serif">
-              Services
-            </li>{" "}
-            <li className="text-[#A2783A] text-2xl font-normal font-serif">
-              Gallery
-            </li>
+            <Link href={"#Home"}>
+              <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
+                Home
+              </li>
+            </Link>
+            <Link href={"#Why"}>
+              {" "}
+              <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
+                Why
+              </li>
+            </Link>
+            <Link href={"#About"}>
+              <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
+                About
+              </li>
+            </Link>
+            <Link href={"#Contact"}>
+              {" "}
+              <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
+                Cotact
+              </li>
+            </Link>
+            <Link href={"/Services"}>
+              <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
+                Services
+              </li>
+            </Link>
+            <Link href={"/Gallery"}>
+              <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
+                Gallery
+              </li>
+            </Link>
           </ul>
         </div>
         <div>

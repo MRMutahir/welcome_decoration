@@ -32,7 +32,7 @@ const RightBar = () => {
             <button className="btn btn-neutral">Book Now</button>
           </div>
         </div> */}
-        <div className="w-full h-screen">
+        <div className="w-full h-full">
           {/* <SecASlider /> */}
           <Slider />
         </div>
