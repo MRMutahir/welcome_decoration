@@ -36,36 +36,42 @@ const Gallery = () => {
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
+            alt="images"
           />
           <Image
             src={ImageTwo}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
+            alt="images"
           />
           <Image
             src={ImageThree}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
+            alt="images"
           />
           <Image
             src={mhendi}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
+            alt="images"
           />
           <Image
             src={mhendi}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
+            alt="images"
           />
           <Image
             src={mhendi}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
+            alt="images"
           />
         </div>
       </div>

@@ -1,10 +1,10 @@
-import React from "react";
+import Image from "next/image";
 
 const ServicesCard = () => {
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
-        <img
+        <Image
           src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
           alt="Shoes"
         />
