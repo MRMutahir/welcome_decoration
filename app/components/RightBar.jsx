@@ -3,8 +3,6 @@ import React from "react";
 import Why from "./Why";
 import About from "./About";
 import Contact from "./Contact";
-import SecASlider from "./SecaSlider";
-import { GiHamburgerMenu } from "react-icons/gi";
 import Slider from "./Slider";
 
 const RightBar = () => {
@@ -47,17 +45,3 @@ const RightBar = () => {
 };
 
 export default RightBar;
-{
-  /* <section>
-            <video
-              // src="/video/video.mp4"
-              src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideo.mp4?alt=media&token=d634aedf-3222-46cc-b05b-9c9b8e070f53"
-              autoPlay
-              loop
-              muted
-              style={{ maxWidth: "100%", height: "auto" }}
-            >
-              Your browser does not support the video tag.
-            </video>
-          </section> */
-}

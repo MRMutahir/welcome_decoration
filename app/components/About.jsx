@@ -1,5 +1,4 @@
 import React from "react";
-// import weeding from "../../public/image/wedding.svg";
 import FounderImage from "../../public/image/MuhammadMutahir.jpeg";
 import Image from "next/image";
 
@@ -29,12 +28,12 @@ const About = () => {
           celebrations, tailored to meet your every need. From the intricate
           designs of Mehendi to the grandeur of Barat and Valima ceremonies, we
           ensure every detail reflects your unique style and essence. Whether
-          its a joyous birthday celebration, a blissful bridal shower, or a
-          vibrant dholki night, we infuse each event with creativity and
+          it&apos;s a joyous birthday celebration, a blissful bridal shower, or
+          a vibrant dholki night, we infuse each event with creativity and
           elegance. Furthermore, our expertise extends beyond traditional events
           to include corporate gatherings such as office parties and grand
           openings, as well as educational institutions functions. At Abdul
-          Khaliq Events, were dedicated to bringing your vision to life,
+          Khaliq Events, we&apos;re dedicated to bringing your vision to life,
           ensuring that every occasion is a true reflection of your dreams and
           aspirations. Let us be a part of your journey, creating memories that
           last a lifetime.

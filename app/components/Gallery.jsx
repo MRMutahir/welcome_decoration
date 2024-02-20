@@ -3,7 +3,6 @@ import ImageOne from "../../public/image/HM1.jpg";
 import ImageTwo from "../../public/image/HM5.jpg";
 import ImageThree from "../../public/birthday.webp";
 import mhendi from "../../public/mhendi.jpg";
-
 const Gallery = () => {
   let ServicesName = [
     "Barat",
@@ -12,7 +11,7 @@ const Gallery = () => {
     "Dholki",
     "Engagement",
     "Birthday",
-    "Ceremonys",
+    "Ceremonies",
   ];
   return (
     <div className="rightBar overflow-auto w-screen h-screen">
@@ -30,48 +29,132 @@ const Gallery = () => {
             ))}
           </div>
         </div>
-        <div className="flex flex-wrap overflow-hidden">
+        <div className="flex flex-wrap mx-auto overflow-hidden gap-1">
           <Image
             src={ImageOne}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
-            alt="images"
+            alt="Barat"
           />
           <Image
             src={ImageTwo}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
-            alt="images"
+            alt="Valima"
           />
           <Image
             src={ImageThree}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
-            alt="images"
+            alt="Birthday"
           />
           <Image
             src={mhendi}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
-            alt="images"
+            alt="Mehendi"
           />
           <Image
             src={mhendi}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
-            alt="images"
+            alt="Mehendi"
           />
           <Image
             src={mhendi}
             width={500}
             height={500}
             className="hover:scale-125 transition-transform duration-300"
-            alt="images"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
+          />{" "}
+          <Image
+            src={mhendi}
+            width={500}
+            height={500}
+            className="hover:scale-125 transition-transform duration-300"
+            alt="Mehendi"
           />
         </div>
       </div>

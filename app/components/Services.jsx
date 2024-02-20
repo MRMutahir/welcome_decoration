@@ -19,7 +19,7 @@ const Services = () => {
           // src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideo.mp4?alt=media&token=d634aedf-3222-46cc-b05b-9c9b8e070f53"
           className="h-screen object-cover fixed"
           // src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
-          // src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideotwo.MP4?alt=media&token=f509730f-d67a-48f6-8793-8c26ba69acf6"
+          src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideotwo.MP4?alt=media&token=f509730f-d67a-48f6-8793-8c26ba69acf6"
           autoPlay
           loop
           muted
