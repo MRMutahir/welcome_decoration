@@ -13,6 +13,7 @@ const About = () => {
           height={100}
           src={FounderImage}
           className="rounded-2xl"
+          alt="image"
         />
       </div>
       <div className="text-center flex gap-4 flex-col">

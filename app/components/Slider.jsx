@@ -18,7 +18,11 @@ export default function Slider() {
     <>
       <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
         <SwiperSlide>
-          <Image src={ImageOne} className="w-full h-screen absolute" />
+          <Image
+            src={ImageOne}
+            className="w-full h-screen absolute"
+            alt="image"
+          />
           {/* <video
             // src="/video/video.mp4"
             src="../../public/video/videoone.MP4"
