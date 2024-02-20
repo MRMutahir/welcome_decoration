@@ -19,9 +19,9 @@ const About = () => {
         <h1 className="text-6xl font-extrabold">Muhammad Mutahir</h1>
         <h4 className="text-2xl font-semibold">Founder</h4>
       </div>
-      <div>
+      <div className="w-[50rem] max-lg:w-[40rem]">
         {" "}
-        <p className="text-center w-[50rem] leading-loose font-light ">
+        <p className="text-center  w-full leading-loose font-light ">
           Abdul Khaliq, the visionary behind our company, established our
           journey in Karachi back in 2017. With a passion for creating
           unforgettable moments, Abdul Khaliq has led our team to redefine event

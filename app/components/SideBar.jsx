@@ -7,8 +7,8 @@ import Image from "next/image";
 
 const SideBar = () => {
   return (
-    <div className="sideBar">
-      <div className="fixed  h-[100vh] w-[20%] flex justify-around flex-col items-center  bg-[#FFF7EA]">
+    <div className="sideBar max-md:hidden">
+      <div className="fixed h-[100vh] w-[20%] flex justify-around flex-col items-center  bg-[#FFF7EA] container max-2xl:w-[20%] max-2xl:bg-black ">
         <div className="flex flex-col  items-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold tracking-tighter">
@@ -51,16 +51,16 @@ const SideBar = () => {
         <div>
           <ul className="flex justify-between gap-4">
             <li>
-              <FaFacebookF className="text-[#A2783A] w-14 h-9" />
+              <FaFacebookF className="text-[#A2783A] w-14 h-9 max-2xl:w-10 max-lg:w-6" />
             </li>
             <li>
-              <FaLinkedinIn className="text-[#A2783A] w-14 h-9" />
+              <FaLinkedinIn className="text-[#A2783A] w-14 h-9 max-2xl:w-10 max-lg:w-6" />
             </li>
             <li>
-              <FaInstagram className="text-[#A2783A] w-14 h-9" />
+              <FaInstagram className="text-[#A2783A] w-14 h-9 max-2xl:w-10 max-lg:w-6" />
             </li>
             <li>
-              <BsWhatsapp className="text-[#A2783A] w-14 h-9" />
+              <BsWhatsapp className="text-[#A2783A] w-14 h-9 max-2xl:w-10 max-lg:w-6" />
             </li>
           </ul>
         </div>
