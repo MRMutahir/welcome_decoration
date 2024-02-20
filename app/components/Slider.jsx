@@ -41,7 +41,7 @@ export default function Slider() {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <Image src={ImageOne} className="w-full h-screen" />
+          <Image src={ImageOne} className="w-full h-screen" alt="image" />
           <div className="">
             <p>
               We believe that it is all about the BIG DREAMS and the small

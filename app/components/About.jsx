@@ -21,7 +21,6 @@ const About = () => {
         <h4 className="text-2xl font-semibold">Founder</h4>
       </div>
       <div className="w-[50rem] max-lg:w-[40rem]">
-        {" "}
         <p className="text-center  w-full leading-loose font-light ">
           Abdul Khaliq, the visionary behind our company, established our
           journey in Karachi back in 2017. With a passion for creating
@@ -30,12 +29,12 @@ const About = () => {
           celebrations, tailored to meet your every need. From the intricate
           designs of Mehendi to the grandeur of Barat and Valima ceremonies, we
           ensure every detail reflects your unique style and essence. Whether
-          it's a joyous birthday celebration, a blissful bridal shower, or a
+          its a joyous birthday celebration, a blissful bridal shower, or a
           vibrant dholki night, we infuse each event with creativity and
           elegance. Furthermore, our expertise extends beyond traditional events
           to include corporate gatherings such as office parties and grand
-          openings, as well as educational institutions' functions. At Abdul
-          Khaliq Events, we're dedicated to bringing your vision to life,
+          openings, as well as educational institutions functions. At Abdul
+          Khaliq Events, were dedicated to bringing your vision to life,
           ensuring that every occasion is a true reflection of your dreams and
           aspirations. Let us be a part of your journey, creating memories that
           last a lifetime.
