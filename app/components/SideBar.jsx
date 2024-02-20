@@ -29,23 +29,23 @@ const SideBar = () => {
         </div>
         <div>
           <ul className="list-none text-center flex flex-col gap-5">
-            <Link href={"#Home"}>
+            <Link href={"/#Home"}>
               <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
                 Home
               </li>
             </Link>
-            <Link href={"#Why"}>
+            <Link href={"/#Why"}>
               {" "}
               <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
                 Why
               </li>
             </Link>
-            <Link href={"#About"}>
+            <Link href={"/#About"}>
               <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
                 About
               </li>
             </Link>
-            <Link href={"#Contact"}>
+            <Link href={"/#Contact"}>
               {" "}
               <li className="text-[#A2783A] text-2xl font-normal font-serif cursor-pointer">
                 Cotact
