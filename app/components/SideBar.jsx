@@ -21,9 +21,10 @@ const SideBar = () => {
             <Image
               // src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/Logo%2FWELCOMElogo.svg?alt=media&token=043a1e4e-04a0-4a21-afe9-8186edcc399c"
               src={WellComeLogo}
-              width={200}
-              height={200}
               alt="welcome decoration"
+              className="w-full h-full"
+              // width={200}
+              // height={200}
             />
           </div>
         </div>

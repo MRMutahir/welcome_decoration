@@ -3,13 +3,21 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { EffectCoverflow, Pagination } from "swiper/modules";
+import {
+  EffectCoverflow,
+  Pagination,
+  Autoplay,
+  Navigation,
+} from "swiper/modules";
 import Image from "next/image";
-
+import ImageOne from "../../public/image/imgOne.jpg";
+import ImageTwo from "../../public/image/imgTwo.jpg";
+import ImageThree from "../../public/image/imgThree.jpg";
+import ImageFour from "../../public/image/imgFour.jpg";
 const SecBSlider = () => {
   return (
-    <div>
-      {" "}
+    <div className="flex flex-col justify-center items-center  h-screen">
+      <h1 className="text-6xl font-medium my-36">Your Story is Ours</h1>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}
@@ -22,29 +30,43 @@ const SecBSlider = () => {
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination]}
-        className="mySwiper"
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
+        className="mySwiper w-full h-96 mx-auto overflow-hidden"
       >
         <SwiperSlide>
           <Image
-            src="https://swiperjs.com/demos/images/nature-1.jpg"
-            width={400}
-            height={400}
+            src={ImageOne}
+            alt="ImageOne"
+            className="w-2/4 mx-auto h-full object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="https://swiperjs.com/demos/images/nature-2.jpg"
-            width={400}
-            height={400}
+            src={ImageTwo}
+            alt="ImageTwo"
+            className="w-2/4 mx-auto h-full object-cover"
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
-            src="https://swiperjs.com/demos/images/nature-3.jpg"
-            width={400}
-            height={400}
+            src={ImageThree}
+            alt="ImageThree"
+            className="w-2/4 mx-auto h-full object-cover"
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <Image
+            src={ImageFour}
+            alt="ImageFour"
+            className="w-2/4 mx-auto h-full object-cover"
           />
         </SwiperSlide>
       </Swiper>
