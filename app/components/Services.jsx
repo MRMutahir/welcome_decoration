@@ -14,7 +14,7 @@ const Services = () => {
   return (
     <div className="rightBar overflow-auto w-screen h-screen ">
       <div className="h-screen">
-        <video
+        {/* <video
           // src="/video/video.mp4"
           // src="https://firebasestorage.googleapis.com/v0/b/video-sharing-app-f1f97.appspot.com/o/video%2Fvideo.mp4?alt=media&token=d634aedf-3222-46cc-b05b-9c9b8e070f53"
           className="h-screen object-cover fixed"
@@ -24,7 +24,7 @@ const Services = () => {
           loop
           muted
           // style={{ maxWidth: "100vw", height: "auto" }
-        ></video>
+        ></video> */}
         <div className="flex justify-center items-center flex-col relative top-0">
           <div className="flex  items-center justify-center flex-col  my-10 h-full gap-6">
             <h1 className="text-7xl font-semibold font-mono">Our Services</h1>
