@@ -16,7 +16,7 @@ import ImageThree from "../../public/image/imgThree.jpg";
 import ImageFour from "../../public/image/imgFour.jpg";
 const SecBSlider = () => {
   return (
-    <div className="flex flex-col justify-center items-center  h-screen">
+    <div className="flex flex-col justify-center items-center  h-full w-full">
       <h1 className="text-6xl font-medium my-36">Your Story is Ours</h1>
       <Swiper
         effect={"coverflow"}
@@ -28,7 +28,7 @@ const SecBSlider = () => {
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
         pagination={{
           clickable: true,
@@ -39,7 +39,7 @@ const SecBSlider = () => {
         }}
         navigation={true}
         modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-        className="mySwiper w-full h-96 mx-auto overflow-hidden"
+        className="mySwiper w-full h-96  overflow-hidden"
       >
         <SwiperSlide>
           <Image

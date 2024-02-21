@@ -12,7 +12,7 @@ const Services = () => {
     "Ceremonys",
   ];
   return (
-    <div className="rightBar overflow-auto w-screen h-screen">
+    <div className="rightBar overflow-auto w-screen h-screen ">
       <div className="h-screen">
         <video
           // src="/video/video.mp4"

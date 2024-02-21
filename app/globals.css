@@ -19,3 +19,36 @@
   background-repeat: no-repeat;
   background-size: cover;
 } */
+
+/* .secA {
+  background-image: url("../public/image/bgOne.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.SecBSlider {
+  background-image: url("../public/image/bgTwo.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+  /* background: transparent; */
+}
+.Why {
+  background-image: url("../public/image/bgThree.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+  /* background: transparent; */
+}
+
+.About {
+  background-image: url("../public/image/bgFour.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+  /* background: transparent; */
+}
