@@ -5,7 +5,7 @@ import Services from "../components/Services";
 const page = () => {
   return (
     <div className="flex">
-      <SideBar />
+      {/* <SideBar /> */}
       <Services />
     </div>
   );

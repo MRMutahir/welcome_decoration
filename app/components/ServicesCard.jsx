@@ -1,7 +1,7 @@
-"use client";
 import React from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
-import { useMotionValue, useTransform, motion } from "framer-motion";
+import weedingImg from "../../public/image/imgThree.jpg";
 
 const ServicesCard = () => {
   const x = useMotionValue(0);
@@ -9,6 +9,11 @@ const ServicesCard = () => {
   const rotateX = useTransform(y, [-100, 100], [30, -30]);
   const rotateY = useTransform(x, [-100, 100], [30, -30]);
   let img = `https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg`;
+
+  const handleHover = () => {
+    console.log("Hovered or focused!");
+  };
+
   return (
     <motion.div
       style={{
@@ -20,9 +25,16 @@ const ServicesCard = () => {
       }}
       drag
       dragElastic={0.18}
+      onHoverStart={handleHover}
+      onFocus={handleHover}
+      dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+      whileTap={{
+        cursor: "grabbing",
+      }}
     >
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure>
+          {/* Replace the placeholder image with your actual image */}
           <Image src={img} alt="Shoes" width={600} height={200} />
         </figure>
         <div className="card-body opacity-0 bg-transparent hover:opacity-100">

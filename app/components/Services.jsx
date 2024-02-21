@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import ServicesCard from "./ServicesCard";
 
@@ -28,7 +30,7 @@ const Services = () => {
         <div className="flex justify-center items-center flex-col relative top-0">
           <div className="flex  items-center justify-center flex-col  my-10 h-full gap-6">
             <h1 className="text-7xl font-semibold font-mono">Our Services</h1>
-            <ul>
+            {/* <ul>
               <li>
                 Weddings:<span> Barat, Valima, Rasme Hina, Dholki</span>
               </li>{" "}
@@ -40,7 +42,7 @@ const Services = () => {
             <p>
               At welcome decoration, we provide a wide range of services to make
               your celebrations extraordinary. Contact us to learn more!
-            </p>
+            </p> */}
 
             {/* <div className="ServicesButton">
               {ServicesName.map((ele) => (
