@@ -3,6 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
+import { Noto_Sans } from "next/font/google";
+import localFont from "next/font/local";
 import {
   EffectCoverflow,
   Pagination,
@@ -14,10 +16,14 @@ import ImageOne from "../../public/image/imgOne.jpg";
 import ImageTwo from "../../public/image/imgTwo.jpg";
 import ImageThree from "../../public/image/imgThree.jpg";
 import ImageFour from "../../public/image/imgFour.jpg";
+const Noto = Noto_Sans({ subsets: ["latin"] });
+const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const SecBSlider = () => {
   return (
     <div className="flex flex-col justify-center items-center  h-full w-full">
-      <h1 className="text-6xl font-medium my-36">Your Story is Ours</h1>
+      <h1 className="text-6xl font-medium my-36 text-[#A2783A]" style={myFont.style}>
+        Your Story is Ours
+      </h1>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

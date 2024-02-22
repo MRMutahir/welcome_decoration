@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/font": "^14.1.0",
     "@react-three/fiber": "^8.15.16",
     "file-loader": "^6.2.0",
     "framer-motion": "^11.0.5",
@@ -19,6 +20,7 @@
     "react-merge-refs": "^2.1.1",
     "react-player": "^2.14.1",
     "react-responsive-carousel": "^3.2.23",
+    "react-scroll": "^1.9.0",
     "sharp": "^0.33.2",
     "styled-components": "^6.1.8",
     "swiper": "^11.0.6",

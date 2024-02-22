@@ -3,9 +3,13 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
 import weedingImg from "../../public/image/imgThree.jpg";
 
-const ServicesCard = (...props) => {
+const ServicesCard = (props) => {
   let servicesItem = [props];
-  console.log(servicesItem, "servicesItem>>>>>>>>>>>>>");
+
+  // servicesItem.forEach((ele) => {
+  //   console.log(ele, ">>>>>>>>>>>>>>>>>ele");
+  // });
+  // console.log(servicesItem, "servicesItem>>>>>>>>>>>>>");
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [30, -30]);
@@ -37,7 +41,7 @@ const ServicesCard = (...props) => {
             cursor: "grabbing",
           }}
         >
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-96 bg-base-100 shadow-xl h-full">
             <figure>
               {/* Replace the placeholder image with your actual image */}
               <Image src={ele.img} alt="Shoes" width={600} height={200} />
@@ -46,7 +50,7 @@ const ServicesCard = (...props) => {
               <h2 className="card-title">{ele.title}</h2>
               <p>{ele.para}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
+                <button className="btn btn-primary">Book Now</button>
               </div>
             </div>
           </div>

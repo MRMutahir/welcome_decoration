@@ -1,6 +1,8 @@
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+
 import Image from "next/image";
 // Import Swiper styles
 import "swiper/css";
@@ -18,8 +20,35 @@ import {
   Navigation,
 } from "swiper/modules";
 export default function Slider() {
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const rotateX = useTransform(y, [-100, 100], [30, -30]);
+  const rotateY = useTransform(x, [-100, 100], [30, -30]);
+  const handleHover = () => {
+    console.log("Hovered or focused!");
+  };
   return (
     <>
+      {/* <motion.div
+        // key={index}
+        style={{
+          x,
+          y,
+          rotateX,
+          rotateY,
+          z: 100,
+        }}
+        drag
+        dragElastic={0.18}
+        onHoverStart={handleHover}
+        onFocus={handleHover}
+        dragConstraints={{ top: 0, left: 0, right: 0, bottom: 0 }}
+        whileTap={{
+          cursor: "grabbing",
+        }}
+      >
+       
+      </motion.div> */}
       <Swiper
         effect={"cube"}
         grabCursor={true}

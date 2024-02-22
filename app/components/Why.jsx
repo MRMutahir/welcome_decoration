@@ -2,15 +2,21 @@ import React from "react";
 import Image from "next/image";
 import WellComeLogo from "../../public/image/img.svg";
 import { FaSquareCheck } from "react-icons/fa6";
+import { Noto_Sans } from "next/font/google";
+import localFont from "next/font/local";
+const Noto = Noto_Sans({ subsets: ["latin"] });
 
+const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const Why = () => {
   return (
     <div
-      className="h-screen  flex items-center justify-center gap-4 flex-col w-full  h-full"
+      className="flex items-center justify-center gap-4 flex-col w-full  h-full"
       id="Why"
     >
       <div className="flex justify-center items-center ">
-        <h1 className="text-8xl font-bold">Why</h1>
+        <h1 className="text-8xl font-bold text-[#A2783A]" style={myFont.style}>
+          Why
+        </h1>
         <div className="">
           <Image
             src={WellComeLogo}
@@ -26,7 +32,7 @@ const Why = () => {
           <span>
             <FaSquareCheck />
           </span>
-          <h4>
+          <h4 style={myFont.style}>
             {" "}
             Welcome Decoration transforms your celebrations into unforgettable
             experiences.
@@ -36,7 +42,7 @@ const Why = () => {
           <span>
             <FaSquareCheck />
           </span>
-          <h4>
+          <h4 style={myFont.style}>
             {" "}
             Experience the magic of meticulous planning and breathtaking décor.
           </h4>
@@ -48,7 +54,7 @@ const Why = () => {
           <span>
             <FaSquareCheck />
           </span>
-          <h4>
+          <h4 style={myFont.style}>
             {" "}
             With Welcome Decoration, every moment becomes a cherished memory.
           </h4>
@@ -58,7 +64,7 @@ const Why = () => {
           <span>
             <FaSquareCheck />
           </span>
-          <h4>
+          <h4 style={myFont.style}>
             {" "}
             From intimate gatherings to grand events, we craft your dreams into
             reality.
@@ -72,7 +78,7 @@ const Why = () => {
           <span>
             <FaSquareCheck />
           </span>
-          <h4>
+          <h4 style={myFont.style}>
             {" "}
             Trust us to elevate your special occasions with creativity and
             elegance.
@@ -82,7 +88,9 @@ const Why = () => {
           <span>
             <FaSquareCheck />
           </span>
-          <h4>Where every celebration sparkles with joy and elegance.</h4>
+          <h4 style={myFont.style}>
+            Where every celebration sparkles with joy and elegance.
+          </h4>
         </div>
       </div>
     </div>

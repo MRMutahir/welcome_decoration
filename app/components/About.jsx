@@ -1,7 +1,11 @@
 import React from "react";
 import FounderImage from "../../public/image/MuhammadMutahir.jpeg";
 import Image from "next/image";
+import { Noto_Sans } from "next/font/google";
+import localFont from "next/font/local";
+const Noto = Noto_Sans({ subsets: ["latin"] });
 
+const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const About = () => {
   return (
     <div
@@ -19,11 +23,17 @@ const About = () => {
         />
       </div>
       <div className="text-center flex gap-4 flex-col">
-        <h1 className="text-6xl font-extrabold">Muhammad Mutahir</h1>
-        <h4 className="text-2xl font-semibold">Founder</h4>
+        <h1 className="text-6xl font-extrabold text-[#A2783A]" style={myFont.style}>
+          Muhammad Mutahir
+        </h1>
+        <h4 className="text-2xl font-semibold text-[#A2783A]" style={myFont.style}>
+          Founder
+        </h4>
       </div>
       <div className="w-[50rem] max-lg:w-[40rem]">
-        <p className="text-center  w-full leading-loose font-light ">
+        <p
+          className={`text-center  w-full leading-loose font-light ${Noto.className}`}
+        >
           Abdul Khaliq, the visionary behind our company, established our
           journey in Karachi back in 2017. With a passion for creating
           unforgettable moments, Abdul Khaliq has led our team to redefine event
