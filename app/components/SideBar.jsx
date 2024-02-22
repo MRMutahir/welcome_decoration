@@ -59,7 +59,7 @@ const SideBar = () => {
             <li
               className={`text-[#A2783A] text-2xl font-normal font-serif cursor-pointer ${Noto.className}`}
             >
-              Cotact
+              Contact
             </li>
           </Link>
           <Link href={"/Services"}>

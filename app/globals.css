@@ -12,7 +12,13 @@
 .rightBar {
   flex: 8;
 }
-
+.bgImgFixed {
+  background-image: url("../public/image//img.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 /* .rightBar {
   background-image: url("https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg");
   background-position: center;

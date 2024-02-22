@@ -17,7 +17,7 @@ const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const RightBar = () => {
   return (
     <div className="rightBar w-screen h-screen">
-      <div className="flex items-center justify-center w-full h-full  max-lg:flex-col  ">
+      <div className="flex items-center justify-center w-full h-full  max-lg:flex-col  rightBarChild ">
         <div className="px-20 rounded-lg rounded-t-none max-lg:items-center w-3/5">
           <h1
             className={`text-6xl text-[#A2783A] font-mediu`}

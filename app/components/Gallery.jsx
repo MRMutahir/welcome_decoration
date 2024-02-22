@@ -92,7 +92,7 @@ const Gallery = () => {
   ];
   return (
     <div className="rightBar overflow-auto w-screen h-screen">
-      <div className="container">
+      <div className="container ">
         <div className="flex items-center justify-center flex-col my-20">
           <h1
             className="text-7xl font-semibold font-mono text-[#A2783A]"

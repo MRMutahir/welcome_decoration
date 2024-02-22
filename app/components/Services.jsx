@@ -23,7 +23,7 @@ const Services = () => {
   // ];
   return (
     <div className="rightBar overflow-auto w-screen h-screen">
-      <div className="container">
+      <div className="container ">
         <div className="flex flex-col justify-center items-center ">
           {/* <video
           // src="/video/video.mp4"
