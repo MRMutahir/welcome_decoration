@@ -1,5 +1,5 @@
-// "use client";
-// import React, { useRef, useState } from "react";
+"use client";
+import React, { useEffect, useRef, useState } from "react";
 import { Noto_Sans } from "next/font/google";
 import localFont from "next/font/local";
 import Why from "./Why";
@@ -9,16 +9,26 @@ import Slider from "./Slider";
 import SecBSlider from "./SecBSlider";
 const Noto = Noto_Sans({ subsets: ["latin"] });
 const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
+import AOS from "aos";
+import "aos/dist/aos.css"; // Import AOS styles
+
 // const Bree = Bree_Serif{ subsets: ["latin"] });
 // console.log(inter, ">>>>>>>>>>>>>>>>>inter");
 // console.log(Noto, ">>>>>>>>>>>>>>>>>inter");
 // bg-[#FFF7EA]
 // console.log(Noto_Sans, "Noto_Sans>>>>>>>>>>>>>>>>>>>>>>");
 const RightBar = () => {
+  useEffect(() => {
+    AOS.init({});
+  }, []);
+
   return (
     <div className="rightBar w-screen h-screen">
       <div className="flex items-center justify-center w-full h-full  max-lg:flex-col  rightBarChild ">
-        <div className="px-20 rounded-lg rounded-t-none max-lg:items-center w-3/5">
+        <div
+          className="px-20 rounded-lg rounded-t-none max-lg:items-center w-3/5"
+          data-aos="fade-right"
+        >
           <h1
             className={`text-6xl text-[#A2783A] font-mediu`}
             style={myFont.style}
@@ -37,22 +47,38 @@ const RightBar = () => {
           </p>
           <button className="btn btn-neutral w-full">Book Now</button>
         </div>
-        <div className="w-96 h-96">
+        <div className="w-96 h-96" data-aos="fade-left">
           <Slider />
         </div>
       </div>
-      <div className="h-full w-full">
+      <div
+        className="h-full w-full"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         <SecBSlider />
       </div>
-      <div className="h-full w-full">
+      <div
+        className="h-full w-full"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         {" "}
         <Why />
       </div>
-      <div className="h-full w-full">
+      <div
+        className="h-full w-full"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         {" "}
         <About />
       </div>
-      <div className="h-full w-full">
+      <div
+        className="h-full w-full"
+        data-aos="fade-up"
+        data-aos-anchor-placement="top-center"
+      >
         {" "}
         <Contact />
       </div>

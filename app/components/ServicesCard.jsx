@@ -1,21 +1,12 @@
 import React from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
-import weedingImg from "../../public/image/imgThree.jpg";
-
 const ServicesCard = (props) => {
   let servicesItem = [props];
-
-  // servicesItem.forEach((ele) => {
-  //   console.log(ele, ">>>>>>>>>>>>>>>>>ele");
-  // });
-  // console.log(servicesItem, "servicesItem>>>>>>>>>>>>>");
   const x = useMotionValue(0);
   const y = useMotionValue(0);
   const rotateX = useTransform(y, [-100, 100], [30, -30]);
   const rotateY = useTransform(x, [-100, 100], [30, -30]);
-  let img = `https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg`;
-
   const handleHover = () => {
     console.log("Hovered or focused!");
   };
