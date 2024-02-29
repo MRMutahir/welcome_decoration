@@ -6,12 +6,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-.sideBar {
+/* .sideBar {
   flex: 2;
 }
 .rightBar {
   flex: 8;
-}
+} */
 .bgImgFixed {
   background-image: url("../public/image//img.svg");
   background-position: center;
