@@ -1,6 +1,7 @@
 "use client";
 import SideBar from "./SideBar";
 import RightBar from "./RightBar";
+import DaisyNavbar from "./DaisyNavbar";
 const Main = () => {
   const pagination = {
     clickable: true,
@@ -9,10 +10,14 @@ const Main = () => {
     },
   };
   return (
-    <div className="flex">
-      <SideBar />
+    // <div className="flex">
+
+    // </div>
+    <>
+      {/* <SideBar /> */}
+      <DaisyNavbar />
       <RightBar />
-    </div>
+    </>
   );
 };
 

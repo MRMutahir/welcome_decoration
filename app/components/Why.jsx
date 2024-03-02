@@ -10,7 +10,7 @@ const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const Why = () => {
   return (
     <div
-      className="flex items-center justify-center gap-4 flex-col w-full  h-full"
+      className="flex items-center justify-center gap-4 flex-col w-full  h-screen"
       id="Why"
     >
       <div className="flex justify-center items-center ">
