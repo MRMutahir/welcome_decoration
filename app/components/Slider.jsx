@@ -60,34 +60,46 @@ export default function Slider() {
         }}
         pagination={true}
         modules={[EffectCube, Pagination]}
-        className="mySwiper w-full h-full"
+        className="mySwiper w-full"
       >
         <SwiperSlide>
           <Image
             src={ImageOne}
             alt="ImageOne"
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full rounded-2xl"
+            layout="responsive"
+            width={1920}
+            height={1080}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             src={ImageTwo}
             alt="ImageTwo"
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full rounded-2xl"
+            layout="responsive"
+            width={1920}
+            height={1080}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             src={ImageThree}
             alt="ImageThree"
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full rounded-2xl"
+            layout="responsive"
+            width={1920}
+            height={1080}
           />
         </SwiperSlide>
         <SwiperSlide>
           <Image
             src={ImageFour}
             alt="ImageFour"
-            className="object-cover w-full h-full"
+            className="object-cover w-full h-full rounded-2xl"
+            layout="responsive"
+            width={1920}
+            height={1080}
           />
         </SwiperSlide>
       </Swiper>

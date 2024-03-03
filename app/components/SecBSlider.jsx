@@ -20,11 +20,9 @@ const Noto = Noto_Sans({ subsets: ["latin"] });
 const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const SecBSlider = () => {
   return (
-    <div className="flex flex-col justify-center items-center  h-screen w-full">
-      <h1
-        className="text-6xl font-medium my-36 text-[#A2783A]"
-        style={myFont.style}
-      >
+    // flex flex-col justify-center items-center  h-screen w-full
+    <div className="container mx-auto text-center mt-20 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl max-sm:text-center">
+      <h1 className="text-[#A2783A] text-4xl md:text-6xl font-bold m-10">
         Your Story is Ours
       </h1>
       <Swiper
@@ -48,7 +46,7 @@ const SecBSlider = () => {
         }}
         navigation={true}
         modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-        className="mySwiper w-full h-96  overflow-hidden"
+        className="mySwiper w-full h-96 overflow-hidden"
       >
         <SwiperSlide>
           <Image

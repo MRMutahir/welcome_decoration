@@ -1,13 +1,14 @@
 import React from "react";
 import SideBar from "../components/SideBar";
 import Services from "../components/Services";
+import DaisyNavbar from "../components/DaisyNavbar";
 
 const page = () => {
   return (
-    <div className="flex">
-      <SideBar />
+    <>
+      <DaisyNavbar />
       <Services />
-    </div>
+    </>
   );
 };
 

@@ -1,10 +1,17 @@
 import React from "react";
+import WellComeLogo from "../../public/image/img.svg";
+import Image from "next/image";
 
 const DaisyNavbar = () => {
   return (
-    <div className=" mx-auto navbar bg-base-100">
+    <div className="mx-auto navbar bg-base-100">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">daisyUI</a>
+        <Image
+          src={WellComeLogo}
+          alt="welcome decoration"
+          width={150}
+          height={150}
+        />
       </div>
       <div className="flex-none">
         <button className="btn btn-square btn-ghost">

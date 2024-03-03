@@ -9,30 +9,42 @@ const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const About = () => {
   return (
     <div
-      className="flex justify-center items-center flex-col gap-4 w-full h-screen"
+      // flex justify-center items-center flex-col gap-4 w-full h-scree
+      className="container mx-auto mt-20 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl space-y-10"
       id="About"
     >
-      <div>
+      <div className="">
         {" "}
         <Image
           width={100}
           height={100}
           src={FounderImage}
-          className="rounded-2xl"
+          className="rounded-2xl mx-auto"
           alt="FounderImage"
         />
       </div>
-      <div className="text-center flex gap-4 flex-col">
-        <h1 className="text-6xl font-extrabold text-[#A2783A]" style={myFont.style}>
+      <div className="text-center">
+        {/* flex gap-4 flex-col */}
+        <h1
+          className="text-[#A2783A] text-4xl md:text-6xl font-bold"
+          style={myFont.style}
+        >
+          {/* text-6xl font-extrabold */}
           Muhammad Mutahir
         </h1>
-        <h4 className="text-2xl font-semibold text-[#A2783A]" style={myFont.style}>
+        <h4
+          className="text-[#A2783A] text-2xl md:text-4xl font-bold mt-5"
+          style={myFont.style}
+        >
+          {/* text-2xl font-semibold */}
           Founder
         </h4>
       </div>
-      <div className="w-[50rem] max-lg:w-[40rem]">
+      <div className="">
+        {/* w-[50rem] max-lg:w-[40rem] */}
         <p
-          className={`text-center  w-full leading-loose font-light ${Noto.className}`}
+          className={` ${Noto.className} text-justify max-sm:mx-4 mb-8 lg:mb-16 font-light  text-gray-500 dark:text-gray-400 sm:text-xl`}
+          // text-center  w-full
         >
           Abdul Khaliq, the visionary behind our company, established our
           journey in Karachi back in 2017. With a passion for creating
