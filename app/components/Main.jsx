@@ -15,6 +15,7 @@ const Main = () => {
     // </div>
     <>
       {/* <SideBar /> */}
+      {/* <Nav /> */}
       <DaisyNavbar />
       <RightBar />
     </>
