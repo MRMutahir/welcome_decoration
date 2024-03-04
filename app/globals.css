@@ -6,6 +6,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  background-color: #fff5f6;
+}
 /* .sideBar {
   flex: 2;
 }

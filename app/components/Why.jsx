@@ -10,21 +10,19 @@ const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 
 const Why = () => {
   return (
-    <div className="container mx-auto mt-20 md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl flex  flex-col items-center gap-2">
+    <div className="container mx-auto h-screen flex  flex-col  items-center justify-center">
       <h1
-        className="text-[#A2783A] text-4xl md:text-6xl font-bold"
+        className="text-[#A2783A] text-4xl md:text-6xl font-bold text-center"
         style={myFont.style}
       >
         Why
       </h1>
-      <div className="">
-        <Image
-          src={WellComeLogo}
-          alt="welcome decoration"
-          width={500}
-          height={500}
-        />
-      </div>
+      <Image
+        src={WellComeLogo}
+        alt="welcome decoration"
+        width={500}
+        height={500}
+      />
       <div className="font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
         <Item>
           Welcome Decoration transforms your celebrations into unforgettable

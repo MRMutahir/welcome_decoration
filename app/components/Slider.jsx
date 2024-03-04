@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/effect-cube";
 import "swiper/css/pagination";
 import ImageOne from "../../public/image/imgOne.jpg";
-import ImageTwo from "../../public/image/imgTwo.jpg";
+import ImageTwo from "../../public/image/imgThree.jpg";
 import ImageThree from "../../public/image/imgThree.jpg";
 import ImageFour from "../../public/image/imgFour.jpg";
 import {
