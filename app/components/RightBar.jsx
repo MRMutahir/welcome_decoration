@@ -24,27 +24,25 @@ const RightBar = () => {
 
   return (
     <>
-      <div className="h-screen">
-        <div class="container mx-auto relative top-10 max-md:space-y-10  md:flex md:flex-col md:justify-center">
-          <div class="text-center space-y-10">
-            <h1 class="text-[#A2783A] font-extrabold text-5xl md:text-4xl lg:text-5xl">
-              Celebrating Dreams,
-            </h1>
-            <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl leading-8 mx-3">
-              Welcome to welcome decoration, where beauty meets functionality.
-              Explore our curated collection of decor pieces and furniture to
-              elevate your space. From timeless elegance to stunning events,
-              we&apos;re here to inspire you and provide personalized service
-              every step of the way. Shop with confidence and create something
-              extraordinary with us today.
-            </p>
-            <button class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-blue-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-80052">
-              Book Now
-            </button>
-          </div>
-          <div class="mx-auto my-10 max-w-screen-md max-sm:mx-5">
-            <Slider />
-          </div>
+      <div class="container mx-auto pt-10 max-md:space-y-10  md:flex md:flex-col md:justify-center">
+        <div class="text-center space-y-10">
+          <h1 class="text-[#A2783A] font-extrabold text-5xl md:text-4xl lg:text-5xl">
+            Celebrating Dreams,
+          </h1>
+          <p class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl leading-8 mx-3">
+            Welcome to welcome decoration, where beauty meets functionality.
+            Explore our curated collection of decor pieces and furniture to
+            elevate your space. From timeless elegance to stunning events,
+            we&apos;re here to inspire you and provide personalized service
+            every step of the way. Shop with confidence and create something
+            extraordinary with us today.
+          </p>
+          <button class="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-blue-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-80052">
+            Book Now
+          </button>
+        </div>
+        <div class="mx-auto my-10 max-w-screen-md max-sm:mx-5">
+          <Slider />
         </div>
       </div>
       <SecBSlider />

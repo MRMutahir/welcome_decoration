@@ -27,25 +27,25 @@ const SecBSlider = () => {
       </h1>
       <Swiper
         effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: false,
-        }}
-        pagination={{
-          clickable: true,
-        }}
-        autoplay={{
-          delay: 2500,
-          disableOnInteraction: false,
-        }}
-        navigation={true}
-        modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
+        // grabCursor={true}
+        // centeredSlides={true}
+        // slidesPerView={"auto"}
+        // coverflowEffect={{
+        //   rotate: 50,
+        //   stretch: 0,
+        //   depth: 100,
+        //   modifier: 1,
+        //   slideShadows: false,
+        // }}
+        // pagination={{
+        //   clickable: true,
+        // }}
+        // autoplay={{
+        //   delay: 2500,
+        //   disableOnInteraction: false,
+        // }}
+        // navigation={true}
+        // modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
         className="mySwiper w-full h-96 overflow-hidden"
       >
         <SwiperSlide>

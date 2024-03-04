@@ -1,14 +1,11 @@
-"use  client";
+"use client";
 import React, { useState } from "react";
 import WellComeLogo from "../../public/image/img.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { Noto_Sans } from "next/font/google";
-import localFont from "next/font/local";
 const Noto = Noto_Sans({ subsets: ["latin"] });
 const MDNav = () => {
-  const [showMenu, setShowMenu] = useState(false);
-
   return (
     <nav className="bg-[#fff5f6] sticky top-0 z-[102] w-full  backdrop-blur-md shadow-xl drop-shadow-md ">
       {" "}
@@ -17,9 +14,9 @@ const MDNav = () => {
           <Image
             src={WellComeLogo}
             alt="welcome decoration"
-            // width={300}
-            // height={300}
-            className="w-48 h-4w-48"
+            width={150}
+            height={150}
+            // className="w-28 h-28"
           />
         </div>
         <div className="md:w-3/4">

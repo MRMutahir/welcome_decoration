@@ -10,7 +10,7 @@ const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 
 const Why = () => {
   return (
-    <div className="container mx-auto h-screen flex  flex-col  items-center justify-center">
+    <div className="container mx-auto flex  flex-col  items-center justify-center h-screen">
       <h1
         className="text-[#A2783A] text-4xl md:text-6xl font-bold text-center"
         style={myFont.style}

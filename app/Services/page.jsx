@@ -1,13 +1,13 @@
-import React from "react";
-import SideBar from "../components/SideBar";
 import Services from "../components/Services";
-import DaisyNavbar from "../components/DaisyNavbar";
+import MDNav from "../components/MDNav";
+import Footer from "../components/Footer";
 
 const page = () => {
   return (
     <>
-      <DaisyNavbar />
+      <MDNav />
       <Services />
+      <Footer />
     </>
   );
 };
