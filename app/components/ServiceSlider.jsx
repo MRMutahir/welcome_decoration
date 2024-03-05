@@ -76,14 +76,14 @@ const ServiceSlider = () => {
       className="h-screen bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${cards[currentIndex].image.src})` }}
     >
-      <div className="h-full mx-auto container py-20 grid grid-rows-2 gap-4">
-        <div className="w-96 px-10 bg-white/75 backdrop-blur-2xl shadow-xl flex flex-col justify-around rounded-xl">
+      <div className="h-full mx-auto container py-20 space-y-10">
+        <div className="w-96 py-10 px-20 bg-white/75 backdrop-blur-2xl shadow-xl flex flex-col justify-around rounded-xl space-y-10">
           <h1 className="text-4xl text-yellow-300">
             {cards[currentIndex].heading}
           </h1>
           <p>{cards[currentIndex].description}</p>
         </div>
-        <div className="grid grid-cols-2">
+        <div className="flex justify-end">
           <div className="flex gap-4 items-center">
             <FaArrowAltCircleLeft
               className="text-white/75 shadow-xl w-10 h-10"
@@ -94,13 +94,29 @@ const ServiceSlider = () => {
               onClick={handleRightClick}
             />
           </div>
-          <div className="w-auto grid grid-cols-6 shadow-2xl">
+          <div className="w-auto grid grid-cols-6 shadow-2xl ml-10">
+            <div
+              className="w-56 h-96  p-4 rounded-xl bg-cover bg-no-repeat"
+              style={{
+                backgroundImage: `url(${cards[currentIndex].image.src})`,
+              }}
+            ></div>
             {cards.map((card, index) => (
-              <div
-                key={index}
-                className="w-56 h-96 border-black p-4 rounded-xl bg-cover bg-no-repeat"
-                style={{ backgroundImage: `url(${card.image.src})` }}
-              ></div>
+              <>
+                <div
+                  key={index}
+                  className={`w-56 h-96  p-4 rounded-xl bg-cover bg-no-repeat border-inherit border-l-white border-l-2 ${
+                    card.image.src === cards[currentIndex].image.src && "hidden"
+                  }`}
+                  style={{
+                    backgroundImage: `url(${
+                      card.image.src === cards[currentIndex].image.src
+                        ? ""
+                        : card.image.src
+                    })`,
+                  }}
+                ></div>
+              </>
             ))}
           </div>
         </div>
