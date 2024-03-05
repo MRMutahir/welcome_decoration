@@ -24,7 +24,7 @@ const RightBar = () => {
 
   return (
     <>
-      <div class="container mx-auto py-10 max-md:space-y-10  md:flex md:flex-col md:justify-center">
+      <div class="container mx-auto py-10 max-md:space-y-10 md:flex md:flex-col md:justify-center">
         <div class="text-center space-y-10">
           <h1 class="text-[#A2783A] font-extrabold text-5xl md:text-4xl lg:text-5xl">
             Celebrating Dreams,

@@ -12,8 +12,6 @@ import localFont from "next/font/local";
 const Noto = Noto_Sans({ subsets: ["latin"] });
 const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const Services = () => {
-  let newArr = [];
-  // const [nameArr, setNameArr] = useState(
   let names = [
     "Barat",
     "Valima",

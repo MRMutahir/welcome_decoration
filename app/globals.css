@@ -17,7 +17,7 @@ body {
   flex: 8;
 } */
 .bgImgFixed {
-  background-image: url("../public/image//img.svg");
+  background-image: url("../public/image/img.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,4 +61,35 @@ body {
   background-size: cover;
   /* opacity: 0.5; */
   /* background: transparent; */
+}
+
+.ServiceSlider_bgImage {
+  background-image: url("../public/image/imgOne.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_img_one {
+  background-image: url("../public/image/imgThree.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_img_two {
+  background-image: url("../public/image/imgTwo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_img_three {
+  background-image: url("../public/image/bgFour.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.card_img_four {
+  background-image: url("../public/image/servicesImgOne.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
