@@ -12,7 +12,7 @@ const Footer = () => {
             <h4 className="text-3xl fonat-semibold text-blueGray-700">
               Let&apos;s keep in touch!
             </h4>
-            <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
+            <h5 className="text-lg   text-blueGray-600 my-4">
               Find us on any of these platforms, we respond 1-2 business days.
             </h5>
             <div className="mt-6 lg:mb-0 mb-6">
@@ -73,7 +73,7 @@ const Footer = () => {
                       Blog
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a
                       className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
                       href="https://www.github.com/creativetimofficial?ref=njs-profile"
@@ -88,7 +88,7 @@ const Footer = () => {
                     >
                       Free Products
                     </a>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
               <div className="w-full lg:w-4/12 px-4">

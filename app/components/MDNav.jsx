@@ -10,7 +10,7 @@ const MDNav = () => {
     <nav className="bg-[#fff5f6] sticky top-0 z-[102] w-full  backdrop-blur-md shadow-xl drop-shadow-md ">
       {" "}
       <div className="container mx-auto flex  items-center  justify-between w-full">
-        <div className="w-full">
+        <div className="w-96">
           <Image
             src={WellComeLogo}
             alt="welcome decoration"
@@ -20,7 +20,7 @@ const MDNav = () => {
           />
         </div>
         <div className="md:w-3/4">
-          <ul className="flex justify-between max-md:hidden md:mx-10 md:gap-8">
+          <ul className="flex justify-between max-md:hidden md:mx-10 md:gap-8 ">
             <Link href={"/#Home"}>
               <li
                 className={`text-[#A2783A] font-normal font-serif cursor-pointer ${Noto.className}`}
@@ -88,7 +88,7 @@ const MDNav = () => {
             </button>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content z-[1] p-2 py-10 px-5 shadow bg-base-100 rounded-box max-sm:w-72 mt-5  space-y-5"
+              className="menu menu-sm dropdown-content z-[1] p-2 py-10 px-5 shadow bg-base-100 rounded-box max-sm:w-72  space-y-5 mr-4 mt-8"
             >
               <Link href={"/#Home"}>
                 <li

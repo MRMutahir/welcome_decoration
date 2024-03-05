@@ -9,7 +9,7 @@ const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const Contact = () => {
   return (
     <div
-      className="container mx-auto  h-screen py-8 lg:py-16 px-4  max-w-screen-md flex  flex-col justify-between"
+      className="container mx-auto  h-screen py-10 lg:py-16 px-4  max-w-screen-md flex  flex-col justify-between"
       id="Contact"
     >
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-[#A2783A]">

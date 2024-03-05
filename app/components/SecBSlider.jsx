@@ -21,7 +21,7 @@ const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 const SecBSlider = () => {
   return (
     // flex flex-col justify-center items-center  h-screen w-full
-    <div className="container mx-auto h-screen flex  flex-col justify-center">
+    <div className="container mx-auto h-screen flex  flex-col justify-center py-10">
       <h1 className="text-[#A2783A] text-4xl md:text-6xl font-bold m-10 text-center">
         Your Story is Ours
       </h1>
