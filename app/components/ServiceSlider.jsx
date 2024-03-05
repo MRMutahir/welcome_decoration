@@ -57,7 +57,7 @@ const ServiceSlider = () => {
     }, 5000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [cards.length]);
 
   const handleLeftClick = () => {
     setCurrentIndex((prevIndex) =>

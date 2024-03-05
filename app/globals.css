@@ -23,19 +23,6 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-/* .rightBar {
-  background-image: url("https://img.freepik.com/free-vector/detailed-hand-painted-pink-watercolour-background_1048-17039.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
-
-/* .secA {
-  background-image: url("../public/image/bgOne.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
 
 .SecBSlider {
   background-image: url("../public/image/bgTwo.jpg");
@@ -63,33 +50,3 @@ body {
   /* background: transparent; */
 }
 
-.ServiceSlider_bgImage {
-  background-image: url("../public/image/imgOne.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.card_img_one {
-  background-image: url("../public/image/imgThree.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.card_img_two {
-  background-image: url("../public/image/imgTwo.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.card_img_three {
-  background-image: url("../public/image/bgFour.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.card_img_four {
-  background-image: url("../public/image/servicesImgOne.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
