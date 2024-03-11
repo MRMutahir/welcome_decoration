@@ -93,22 +93,42 @@ const Gallery = () => {
   return (
     <>
       {" "}
-      <h1
-        className="mb-4 text-4xl tracking-tight font-extrabold text-center 0 dark:text-white text-[#A2783A]"
-        style={myFont.style}
-      >
-        Our Gallery
-      </h1>
-      <div className="my-10 grid grid-cols-4 gap-6">
-        {ServicesName.map((ele) => (
-          <button
-            key={ele}
-            className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+      <div className="container h-auto flex  flex-col  items-center justify-center">
+        <div className="h-full flex flex-col justify-center items-center py-20">
+          <h1
+            className="mb-4 text-4xl tracking-tight font-extrabold text-center 0 dark:text-white text-[#A2783A]"
             style={myFont.style}
           >
-            {ele}
-          </button>
-        ))}
+            Our Gallery
+          </h1>
+          <div className="my-10">
+            <div className="flex flex-wrap justify-center mx-4">
+              {ServicesName.map((ele, index) => (
+                <button
+                  key={index}
+                  className={`relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800`}
+                >
+                  <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                    {ele}
+                  </span>
+                </button>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-wrap justify-center">
+            {imagesObj.map((ele, index) => (
+              <div key={index} className="m-2">
+                <Image
+                  src={ele.img.src}
+                  alt={ele.alt}
+                  width={200}
+                  height={400}
+                  className="rounded-xl"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </>
     // <div className="rightBar overflow-auto w-screen h-screen">
