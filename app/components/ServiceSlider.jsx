@@ -8,6 +8,7 @@ import servicesImgFour from "../../public/image/servicesImgFour.jpg";
 import servicesImgfive from "../../public/image/servicesImgfive.jpg";
 import servicesImgSix from "../../public/image/servicesImgSix.jpg";
 import Image from "next/image";
+// import ServiceSwipper from "./ServiceSwipper";
 
 const ServiceSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -74,20 +75,20 @@ const ServiceSlider = () => {
 
   return (
     <div
-      className="h-screen bg-cover bg-no-repeat"
+      className="max-md:h-auto h-auto bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${cards[currentIndex].image.src})` }}
     >
-      <div className="h-full mx-auto container flex  flex-col jus">
+      <div className="max-md:py-20 h-full mx-auto container flex  flex-col justify-center  items-center">
         <div
           //  className="w-auto py-10 px-5 bg-white/75 backdrop-blur-2xl shadow-xl  rounded-xl space-y-10 flex justify-between max-md:w-4/5"
-          className="py-10 px-5 bg-white/75 backdrop-blur-2xl shadow-xl  rounded-xl space-y-10 max-sm:w-4/5 max-sm::mx-5  flex  flex-col justify-center items-center"
+          className="max-2xl:w-4/5  max-2xl:mt-10  mt-10 w-4/5 py-10 px-5 bg-white/75 backdrop-blur-2xl shadow-xl  rounded-xl space-y-10 max-sm:w-4/5 max-sm::mx-5  flex  flex-col justify-center items-center"
         >
           {/* <div
            className="flex  flex-col items-center  justify-center gap-4"
           >
            
           </div> */}
-          <h1 className="max-sm:text-4xl text-yellow-300 ">
+          <h1 className="max-sm:text-4xl text-yellow-300 max-xl:text-6xl max-2xl:text-8xl  text-6xl ">
             {cards[currentIndex].heading}
           </h1>
           <p className="max-sm:w-full text-center">
@@ -116,32 +117,25 @@ const ServiceSlider = () => {
             onClick={handleRightClick}
           />
         </div>
-        <div>Cards</div>
-        {/* <div className="w-auto grid grid-cols-6 shadow-2xl ml-10">
-          <div
-            className="w-56 h-96  p-4 rounded-xl bg-cover bg-no-repeat"
-            style={{
-              backgroundImage: `url(${cards[currentIndex].image.src})`,
-            }}
-          ></div>
-          {cards.map((card, index) => (
-            <>
-              <div
-                key={index}
-                className={`w-56 h-96  p-4 rounded-xl bg-cover bg-no-repeat border-inherit border-l-white border-l-2 ${
-                  card.image.src === cards[currentIndex].image.src && "hidden"
-                }`}
-                style={{
-                  backgroundImage: `url(${
-                    card.image.src === cards[currentIndex].image.src
-                      ? ""
-                      : card.image.src
-                  })`,
-                }}
-              ></div>
-            </>
+
+        <div
+          className="
+       h-auto w-auto  flex   flex-wrap mx-20 mb-10"
+        >
+          {cards.map((ele, index) => (
+            <button
+              key={index} // Add a unique key for each button
+              onClick={() => setCurrentIndex(index)} // Update currentIndex when button is clicked
+              className={`relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-cyan-500 to-blue-500 group-hover:from-cyan-500 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-cyan-200 dark:focus:ring-cyan-800 ${
+                index === currentIndex ? "bg-opacity-100" : "bg-opacity-50"
+              }`} // Apply different styles based on currentIndex
+            >
+              <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
+                {ele.heading}
+              </span>
+            </button>
           ))}
-        </div> */}
+        </div>
       </div>
     </div>
   );
