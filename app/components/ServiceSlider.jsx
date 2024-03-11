@@ -7,6 +7,7 @@ import servicesImgthree from "../../public/image/servicesImgthree.jpg";
 import servicesImgFour from "../../public/image/servicesImgFour.jpg";
 import servicesImgfive from "../../public/image/servicesImgfive.jpg";
 import servicesImgSix from "../../public/image/servicesImgSix.jpg";
+import Image from "next/image";
 
 const ServiceSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -76,50 +77,71 @@ const ServiceSlider = () => {
       className="h-screen bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${cards[currentIndex].image.src})` }}
     >
-      <div className="h-full mx-auto container py-20 space-y-10">
-        <div className="w-96 py-10 px-20 bg-white/75 backdrop-blur-2xl shadow-xl flex flex-col justify-around rounded-xl space-y-10">
-          <h1 className="text-4xl text-yellow-300">
+      <div className="h-full mx-auto container flex  flex-col jus">
+        <div
+          //  className="w-auto py-10 px-5 bg-white/75 backdrop-blur-2xl shadow-xl  rounded-xl space-y-10 flex justify-between max-md:w-4/5"
+          className="py-10 px-5 bg-white/75 backdrop-blur-2xl shadow-xl  rounded-xl space-y-10 max-sm:w-4/5 max-sm::mx-5  flex  flex-col justify-center items-center"
+        >
+          {/* <div
+           className="flex  flex-col items-center  justify-center gap-4"
+          >
+           
+          </div> */}
+          <h1 className="max-sm:text-4xl text-yellow-300 ">
             {cards[currentIndex].heading}
           </h1>
-          <p>{cards[currentIndex].description}</p>
+          <p className="max-sm:w-full text-center">
+            {cards[currentIndex].description}
+          </p>
+          <Image
+            height={800}
+            width={400}
+            src={cards[currentIndex].image}
+            alt={cards[currentIndex].title}
+            className="rounded-xl"
+          />
+          {/* <div
+          // className="mx-4"
+          >
+       
+          </div> */}
         </div>
-        <div className="flex justify-end">
-          <div className="flex gap-4 items-center">
-            <FaArrowAltCircleLeft
-              className="text-white/75 shadow-xl w-10 h-10"
-              onClick={handleLeftClick}
-            />
-            <FaArrowAltCircleRight
-              className="text-white/75  shadow-xl w-10 h-10"
-              onClick={handleRightClick}
-            />
-          </div>
-          <div className="w-auto grid grid-cols-6 shadow-2xl ml-10">
-            <div
-              className="w-56 h-96  p-4 rounded-xl bg-cover bg-no-repeat"
-              style={{
-                backgroundImage: `url(${cards[currentIndex].image.src})`,
-              }}
-            ></div>
-            {cards.map((card, index) => (
-              <>
-                <div
-                  key={index}
-                  className={`w-56 h-96  p-4 rounded-xl bg-cover bg-no-repeat border-inherit border-l-white border-l-2 ${
-                    card.image.src === cards[currentIndex].image.src && "hidden"
-                  }`}
-                  style={{
-                    backgroundImage: `url(${
-                      card.image.src === cards[currentIndex].image.src
-                        ? ""
-                        : card.image.src
-                    })`,
-                  }}
-                ></div>
-              </>
-            ))}
-          </div>
+        <div className="flex gap-4 items-center my-5">
+          <FaArrowAltCircleLeft
+            className="text-white/75  w-10 h-10 cursor-pointer"
+            onClick={handleLeftClick}
+          />
+          <FaArrowAltCircleRight
+            className="text-white/75   w-10 h-10 cursor-pointer"
+            onClick={handleRightClick}
+          />
         </div>
+        <div>Cards</div>
+        {/* <div className="w-auto grid grid-cols-6 shadow-2xl ml-10">
+          <div
+            className="w-56 h-96  p-4 rounded-xl bg-cover bg-no-repeat"
+            style={{
+              backgroundImage: `url(${cards[currentIndex].image.src})`,
+            }}
+          ></div>
+          {cards.map((card, index) => (
+            <>
+              <div
+                key={index}
+                className={`w-56 h-96  p-4 rounded-xl bg-cover bg-no-repeat border-inherit border-l-white border-l-2 ${
+                  card.image.src === cards[currentIndex].image.src && "hidden"
+                }`}
+                style={{
+                  backgroundImage: `url(${
+                    card.image.src === cards[currentIndex].image.src
+                      ? ""
+                      : card.image.src
+                  })`,
+                }}
+              ></div>
+            </>
+          ))}
+        </div> */}
       </div>
     </div>
   );
