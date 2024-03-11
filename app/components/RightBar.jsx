@@ -1,17 +1,15 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { Noto_Sans } from "next/font/google";
-import localFont from "next/font/local";
 import Why from "./Why";
 import About from "./About";
 import Contact from "./Contact";
 import Slider from "./Slider";
 import SecBSlider from "./SecBSlider";
-// const Noto = Noto_Sans({ subsets: ["latin"] });
-// const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 import AOS from "aos";
 import "aos/dist/aos.css"; // Import AOS styles
 import Footer from "./Footer";
+// const Noto = Noto_Sans({ subsets: ["latin"] });
+// const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 // const Bree = Bree_Serif{ subsets: ["latin"] });
 // console.log(inter, ">>>>>>>>>>>>>>>>>inter");
 // console.log(Noto, ">>>>>>>>>>>>>>>>>inter");

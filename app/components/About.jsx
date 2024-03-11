@@ -1,5 +1,6 @@
 import React from "react";
-import FounderImage from "../../public/image/MuhammadMutahir.jpeg";
+// import FounderImage from "../../public/image/MuhammadMutahir.jpeg";
+import FounderImage from "../../public/image/AbdulKhaliq.jpg";
 import Image from "next/image";
 import { Noto_Sans } from "next/font/google";
 import localFont from "next/font/local";
@@ -26,7 +27,7 @@ const About = () => {
             className="text-[#A2783A] text-4xl md:text-6xl font-bold text-center"
             style={myFont.style}
           >
-            Muhammad Mutahir
+           Abdul Khaliq
           </h1>
           <h4
             className="text-[#A2783A] text-2xl md:text-4xl font-bold mt-5 text-center"
