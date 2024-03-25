@@ -8,51 +8,8 @@
 }
 
 body {
-  /* background-color: #fff5f6; */
-  /* background-color: #00308f; */
-  /* background: #050924; fallback for old browsers */
-  /* background-image: url("../public/image/bgColor.jpeg"); */
   background-image: url("https://firebasestorage.googleapis.com/v0/b/linear-sight-362821.appspot.com/o/wellcome%2FbodyBg.jpg?alt=media&token=7f3b6469-323e-467a-bacb-1ee08055a556");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-/* .sideBar {
-  flex: 2;
-}
-.rightBar {
-  flex: 8;
-} */
-.bgImgFixed {
-  background-image: url("../public/image/img.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.SecBSlider {
-  background-image: url("../public/image/bgTwo.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* opacity: 0.5; */
-  /* background: transparent; */
-}
-.Why {
-  background-image: url("../public/image/bgThree.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* opacity: 0.5; */
-  /* background: transparent; */
-}
-
-.About {
-  background-image: url("../public/image/bgFour.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  /* opacity: 0.5; */
-  /* background: transparent; */
 }

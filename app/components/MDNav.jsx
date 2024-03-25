@@ -31,7 +31,7 @@ const MDNav = () => {
               <li
                 className={`text-[#A2783A] font-normal font-serif cursor-pointer ${Noto.className}`}
               >
-                Home
+                H<span className="text-white">ome</span>
               </li>
             </Link>
             <Link href={"/#Why"}>
@@ -39,14 +39,14 @@ const MDNav = () => {
               <li
                 className={`text-[#A2783A]   font-normal font-serif cursor-pointer ${Noto.className}`}
               >
-                Why
+                W<span className="text-white">hy</span>
               </li>
             </Link>
             <Link href={"/#About"}>
               <li
                 className={`text-[#A2783A]   font-normal font-serif cursor-pointer ${Noto.className}`}
               >
-                About
+                A<span className="text-white">bout</span>
               </li>
             </Link>
             <Link href={"/#Contact"}>
@@ -54,21 +54,21 @@ const MDNav = () => {
               <li
                 className={`text-[#A2783A]   font-normal font-serif cursor-pointer ${Noto.className}`}
               >
-                Contact
+                C<span className="text-white">ontact</span>
               </li>
             </Link>
             <Link href={"/Services"}>
               <li
                 className={`text-[#A2783A]   font-normal font-serif cursor-pointer ${Noto.className}`}
               >
-                Services
+                S<span className="text-white">ervices</span>
               </li>
             </Link>
             <Link href={"/Gallery"}>
               <li
                 className={`text-[#A2783A]   font-normal font-serif cursor-pointer ${Noto.className}`}
               >
-                Gallery
+                G<span className="text-white">allery</span>
               </li>
             </Link>
           </ul>
