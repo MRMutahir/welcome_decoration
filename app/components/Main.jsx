@@ -2,7 +2,6 @@ import RightBar from "./RightBar";
 import MDNav from "./MDNav";
 
 const Main = () => {
- 
   return (
     <>
       <MDNav />

@@ -93,7 +93,7 @@ const Gallery = () => {
   return (
     <>
       {" "}
-      <div className="container h-auto flex  flex-col  items-center justify-center">
+      <div className="container h-auto mx-auto flex  flex-col  items-center justify-center">
         <div className="h-full flex flex-col justify-center items-center py-20">
           <h1
             className="mb-4 text-4xl tracking-tight font-extrabold text-center 0 dark:text-white text-[#A2783A]"

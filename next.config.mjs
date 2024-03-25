@@ -3,7 +3,7 @@
 
 const nextConfig = {
   images: {
-    domains: ["daisyui.com", "swiperjs.com"], // Add the domain here
+    domains: ["daisyui.com", "swiperjs.com", "images.remotePatterns"], // Add the domain here
   },
 };
 

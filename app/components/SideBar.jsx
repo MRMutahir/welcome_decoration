@@ -13,7 +13,10 @@ const myFont = localFont({ src: "./fonts/BreeSerif-Regular.ttf" });
 
 const SideBar = () => {
   return (
-    <div className="sideBar max-md:hidden">
+    <div
+      className="sideBar max-md:hidden  "
+      // style="background-image: url('https://files.123freevectors.com/wp-content/original/116355-abstract-dark-blue-lights-background-vector.jpg');"
+    >
       <div className="fixed h-[100vh] w-[20%] flex justify-around flex-col items-center  container max-2xl:w-[20%">
         <div className="text-center">
           <h1

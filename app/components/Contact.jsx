@@ -15,7 +15,7 @@ const Contact = () => {
       <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-[#A2783A]">
         Contact Us
       </h2>
-      <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+      <p className="mb-8 lg:mb-16 font-light text-center text-white dark:text-white sm:text-xl">
         Got a technical issue? Want to send feedback about a beta feature? Need
         details about our Business plan? Let us know.
       </p>
@@ -23,7 +23,7 @@ const Contact = () => {
         <div>
           <label
             htmlFor="email"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
           >
             Your email
           </label>
@@ -38,7 +38,7 @@ const Contact = () => {
         <div>
           <label
             htmlFor="subject"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+            className="block mb-2 text-sm font-medium text-white dark:text-gray-300"
           >
             Subject
           </label>
@@ -53,7 +53,7 @@ const Contact = () => {
         <div className="sm:col-span-2">
           <label
             htmlFor="message"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+            className="block mb-2 text-sm font-medium text-white dark:text-gray-400"
           >
             Your message
           </label>
@@ -66,7 +66,7 @@ const Contact = () => {
         </div>
         <button
           type="submit"
-          className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-blue-500 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
+          className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-blue-700 sm:w-fit hover:bg-primary-800 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800"
         >
           Send message
         </button>

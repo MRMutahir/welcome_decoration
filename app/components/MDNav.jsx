@@ -7,7 +7,13 @@ import { Noto_Sans } from "next/font/google";
 const Noto = Noto_Sans({ subsets: ["latin"] });
 const MDNav = () => {
   return (
-    <nav className="bg-[#fff5f6] sticky top-0 z-[102] w-full  backdrop-blur-md shadow-xl drop-shadow-md ">
+    // bg-[#fff5f6]
+    // bg-[#050924]
+    // bg-[#050924]/75
+    <nav
+      className="backdrop-blur-2xl 
+    sticky top-0 z-[102] w-full   shadow-2xl drop-shadow-md "
+    >
       {" "}
       <div className="container mx-auto flex  items-center  justify-between w-full">
         <div className="w-96">

@@ -22,31 +22,34 @@ const SecBSlider = () => {
   return (
     // flex flex-col justify-center items-center  h-screen w-full
     <div className="container mx-auto h-screen flex  flex-col justify-center py-10">
-      <h1 className="text-[#A2783A] text-4xl md:text-6xl font-bold m-10 text-center">
+      <h1
+        className="text-[#A2783A] text-4xl md:text-6xl font-bold m-10 text-center "
+        data-aos="fade-up"
+      >
         Your Story is Ours
       </h1>
       <Swiper
         effect={"coverflow"}
-        // grabCursor={true}
-        // centeredSlides={true}
-        // slidesPerView={"auto"}
-        // coverflowEffect={{
-        //   rotate: 50,
-        //   stretch: 0,
-        //   depth: 100,
-        //   modifier: 1,
-        //   slideShadows: false,
-        // }}
-        // pagination={{
-        //   clickable: true,
-        // }}
-        // autoplay={{
-        //   delay: 2500,
-        //   disableOnInteraction: false,
-        // }}
-        // navigation={true}
-        // modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
-        className="mySwiper w-full h-96 overflow-hidden"
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: false,
+        }}
+        pagination={{
+          clickable: true,
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[EffectCoverflow, Pagination, Autoplay, Navigation]}
+        className="mySwiper w-full h-96 overflow-hidden mt-5"
       >
         <SwiperSlide>
           <Image

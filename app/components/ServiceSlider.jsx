@@ -76,22 +76,22 @@ const ServiceSlider = () => {
   return (
     <div
       className="max-md:h-auto h-auto bg-cover bg-no-repeat"
-      style={{ backgroundImage: `url(${cards[currentIndex].image.src})` }}
+      // style={{ backgroundImage: `url(${cards[currentIndex].image.src})` }}
     >
       <div className="max-md:py-20 h-full mx-auto container flex  flex-col justify-center  items-center">
         <div
           //  className="w-auto py-10 px-5 bg-white/75 backdrop-blur-2xl shadow-xl  rounded-xl space-y-10 flex justify-between max-md:w-4/5"
-          className="max-2xl:w-4/5  max-2xl:mt-10  mt-10 w-4/5 py-10 px-5 bg-white/75 backdrop-blur-2xl shadow-xl  rounded-xl space-y-10 max-sm:w-4/5 max-sm::mx-5  flex  flex-col justify-center items-center"
+          className="max-2xl:w-4/5  max-2xl:mt-10  mt-10 w-4/5 py-10 px-5 bg-white/75 opacity-75 backdrop-blur-2xl shadow-xl  rounded-xl space-y-10 max-sm:w-4/5 max-sm::mx-5  flex  flex-col justify-center items-center brightness-100"
         >
           {/* <div
            className="flex  flex-col items-center  justify-center gap-4"
           >
            
           </div> */}
-          <h1 className="max-sm:text-4xl text-yellow-300 max-xl:text-6xl max-2xl:text-8xl  text-6xl ">
+          <h1 className="max-sm:text-4xl text-[#A2783A] max-xl:text-6xl max-2xl:text-8xl  text-6xl font-extrabold ">
             {cards[currentIndex].heading}
           </h1>
-          <p className="max-sm:w-full text-center">
+          <p className="max-sm:w-full text-center text-2xl">
             {cards[currentIndex].description}
           </p>
           <Image

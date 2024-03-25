@@ -27,7 +27,7 @@ const About = () => {
             className="text-[#A2783A] text-4xl md:text-6xl font-bold text-center"
             style={myFont.style}
           >
-           Abdul Khaliq
+            Abdul Khaliq
           </h1>
           <h4
             className="text-[#A2783A] text-2xl md:text-4xl font-bold mt-5 text-center"
@@ -36,7 +36,10 @@ const About = () => {
             Founder
           </h4>
           <p
-            className={` ${Noto.className} px-5 text-justify max-sm:mx-4 mb-8 lg:mb-16 font-light  text-gray-500 dark:text-gray-400 sm:text-xl`}
+            className={` ${Noto.className} px-5 text-justify max-sm:mx-4 mb-8 lg:mb-16 font-light  text-white dark:text-white sm:text-xl`}
+            data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000"
           >
             Abdul Khaliq, the visionary behind our company, established our
             journey in Karachi back in 2017. With a passion for creating
