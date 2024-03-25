@@ -1,4 +1,3 @@
-"use client";
 import RightBar from "./RightBar";
 import MDNav from "./MDNav";
 
