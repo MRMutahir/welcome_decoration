@@ -24,7 +24,7 @@ const SecBSlider = () => {
     <div className="container mx-auto h-screen flex  flex-col justify-center py-10">
       <h1
         className="text-[#A2783A] text-4xl md:text-6xl font-bold m-10 text-center "
-        data-aos="fade-up"
+        // data-aos="fade-up"
       >
         Your Story is Ours
       </h1>

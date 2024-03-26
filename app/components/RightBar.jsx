@@ -28,15 +28,15 @@ const RightBar = () => {
             className="
           text-[#A2783A] 
           font-extrabold text-5xl md:text-4xl lg:text-5xl "
-            data-aos="fade-down"
+            // data-aos="fade-down"
           >
             Celebrating Dreams,
           </h1>
           <p
             className="mb-8 lg:mb-16 font-light text-center text-white sm:text-xl leading-8 mx-3"
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            // data-aos="flip-left"
+            // data-aos-easing="ease-out-cubic"
+            // data-aos-duration="2000"
           >
             Welcome to welcome decoration, where beauty meets functionality.
             Explore our curated collection of decor pieces and furniture to

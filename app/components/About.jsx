@@ -37,9 +37,9 @@ const About = () => {
           </h4>
           <p
             className={` ${Noto.className} px-5 text-justify max-sm:mx-4 mb-8 lg:mb-16 font-light  text-white dark:text-white sm:text-xl`}
-            data-aos="flip-left"
-            data-aos-easing="ease-out-cubic"
-            data-aos-duration="2000"
+            // data-aos="flip-left"
+            // data-aos-easing="ease-out-cubic"
+            // data-aos-duration="2000"
           >
             Abdul Khaliq, the visionary behind our company, established our
             journey in Karachi back in 2017. With a passion for creating

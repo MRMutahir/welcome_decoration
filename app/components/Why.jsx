@@ -13,7 +13,7 @@ const Why = () => {
     <div className="container mx-auto py-10 flex  flex-col  items-center justify-center h-screen">
       <h1
         className="text-[#A2783A] text-4xl md:text-6xl font-bold text-center"
-        data-aos="fade-right"
+        // data-aos="fade-right"
         style={myFont.style}
       >
         Why
@@ -23,13 +23,13 @@ const Why = () => {
         alt="welcome decoration"
         width={500}
         height={500}
-        data-aos="fade-left"
+        // data-aos="fade-left"
       />
       <div
         className="font-light text-center text-white dark:text-white sm:text-xl"
-        data-aos="flip-left"
-        data-aos-easing="ease-out-cubic"
-        data-aos-duration="2000"
+        // data-aos="flip-left"
+        // data-aos-easing="ease-out-cubic"
+        // data-aos-duration="2000"
       >
         <Item>
           Welcome Decoration transforms your celebrations into unforgettable
