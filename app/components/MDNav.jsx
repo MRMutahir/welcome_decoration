@@ -22,7 +22,7 @@ const MDNav = () => {
             alt="welcome decoration"
             width={150}
             height={150}
-            // className="w-28 h-28"
+          // className="w-28 h-28"
           />
         </div>
         <div className="md:w-3/4">
@@ -74,7 +74,7 @@ const MDNav = () => {
           </ul>
           <div className="flex-none dropdown dropdown-end">
             <button
-              className="btn btn-square btn-ghost md:hidden"
+              className="btn btn-square btn-ghost md:hidden text-white"
               tabIndex={0}
               role="button"
             >
